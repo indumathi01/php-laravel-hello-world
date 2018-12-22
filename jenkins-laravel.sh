@@ -15,7 +15,7 @@ fi
 currentdate=`date "+%Y-%m-%d"`
 scriptpath="/var/lib/jenkins/workspace/sample"
 destination_project="$1"
-destination_branch="master"
+destination_branch=`echo "$2" | awk -F "/" '{printf "%s", $2}'`
 
 # Get configuration variables
 source ${scriptpath}/config/laravel/${destination_project}.conf
