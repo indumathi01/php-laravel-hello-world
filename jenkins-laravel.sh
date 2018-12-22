@@ -13,7 +13,7 @@ fi
 
 # Declare variables
 currentdate=`date "+%Y-%m-%d"`
-scriptpath="/var/bin/jenkins"
+scriptpath="/var/bin/jenkins/workspace/sample/"
 destination_project="$1"
 destination_branch="master"
 
@@ -21,7 +21,7 @@ destination_branch="master"
 source ${scriptpath}/config/laravel/${destination_project}.conf
 echo "Pushing to $destination_branch .. "
 
-item_rootdir="/var/lib/jenkins/workspace/php"
+item_rootdir="/var/lib/jenkins/workspace/sample"
 alert_email="alerts@yourdomain.com"
 user_perm="uuser"
 group_perm="nginx"
