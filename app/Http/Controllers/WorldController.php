@@ -12,7 +12,7 @@ class WorldController extends Controller
         // ?comment=foobar
         $comment = $request->input('comment');
 
-        $msg = 'Welcome everyone: Have a nice day From Zippyops';
+        $msg = 'Welcome you all: Have a nice day From Zippyops';
 
         if ($message != null) {
             $msg = $message;
